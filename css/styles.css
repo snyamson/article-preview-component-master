@@ -172,18 +172,18 @@ footer {
     
     main {
         flex-direction: column;
-        height: 80%;
-        width: 90%;
+        height: 80vh;
+        width: 90vw;
     }
 
     #image--tab {
-        height: 40%;
+        height: 40vh;
         width: 100%;
         border-radius: 10px 10px 0 0;
     }
 
     #article--tab {
-        height: 60%;
+        height: 60vh;
         width: 100%;
         border-radius: 0 0 10px 10px;
     }
