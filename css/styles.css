@@ -22,16 +22,15 @@ body {
 /* Main */
 
 main {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    height: 45%;
+    display: flex;
+    height: 50%;
     width: 60%;
 }
 
 /* Image -- Tab */
 
 #image--tab {
-    grid-column: 1 / 2;
+    width: 40%;
     background: url("/images/drawers.jpg") center center / cover no-repeat;
     border-radius: 10px 0 0 10px;
 }
@@ -39,7 +38,7 @@ main {
 /* Article -- Tab */
 
 #article--tab {
-    grid-column: 2 / 3;
+    width: 60%;
     background-color: #fff;
     border-radius: 0 10px 10px 0;
     padding: 20px 40px;
@@ -165,4 +164,38 @@ footer {
     bottom: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* For tablet */
+
+@media (max-width: 768px) {
+    
+    main {
+        flex-direction: column;
+        height: 80%;
+        width: 90%;
+    }
+
+    #image--tab {
+        height: 40%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #article--tab {
+        height: 60%;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .head--text {
+        font-size: 0.9rem;
+    }
+
+
+    /* Footer */
+
+    footer {
+        display: none;
+    }
 }
